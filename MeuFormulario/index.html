@@ -1,7 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Meu Formulario</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
+        <table>
+            <form method="post" action="cadastrar.php">
+                <tr> 
+                    <td>
+                        <label for="nome">Nome</label>
+                    </td>    
+                    <td>
+                        <input type="text" name="nome">
+                    </td>
+                </tr>
+                    <td>
+                        <label for="endereco">Endereço</label>
+                    </td>    
+                    <td>
+                        <input type="text" name="endereco">
+                    </td>
+                <tr>
+                    <td>
+                       <label for="estado">Estado</label> 
+                    </td>
+                    <td>
+                       <select name="estado">
+                           <option value="pb">Paraiba </option>
+                           <option value="pe">Pernambuco</option>
+                           <option value="rn">Rio grande do Norte</option>
+                       </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sexo">Sexo</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="sexo" value="Masculino"> Masculino<br>
+                        <input type="radio" name="sexo" value="feminino"> Feminino<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="materias preferidas">Matérias Preferidas</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="materias preferidas" value="portugues">Português<br>
+                        <input type="checkbox" name="materias preferidas" value="java">Java<br> 
+                        <input type="checkbox" name="materias preferidas" value="matematica">Matemática<br>
+                        <input type="checkbox" name="materias preferidas" value="php">Php<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resumo de suas habilidades">Resumo de suas habilidades</label>
+                    </td>
+                    <td>
+                        <textarea name="resumo de suas habilidades">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="enviar">Enviar</label>
+                    </td>
+                    <td>
+                        <input type="submit" value="enviar">
+                    </td>
+                </tr>
+             </form>
+        </table>
     </body>
 </html>
